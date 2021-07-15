@@ -1,4 +1,4 @@
-M208 Y 320			    ; temporarily extend Y-axis max by 10 mm
+M208 Y320 S0  	    ; temporarily extend Y-axis max by 10 mm
 
 G90                 ; absolute positioning
 G1 H0 Y320	 			  ; move to extended max Y
@@ -14,4 +14,4 @@ G1 X5 F6000       	; go back a few mm to prevent running the motor into the Y en
 
 G90                 ; absolute positioning
 G1 H0 Y310				  ; move to real max Y
-M208 Y 310			    ; fix Y axis to 310 mm
+M208 Y310 S0		    ; fix Y axis to 310 mm
